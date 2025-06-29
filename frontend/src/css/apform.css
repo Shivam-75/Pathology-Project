@@ -1,0 +1,97 @@
+.Appintment-form {
+  height: 80vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  position: relative;
+}
+.test-from-header {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 7vmin;
+  margin-bottom: 30px;
+}
+.appintment-form-card {
+  height: 400px;
+  width: 90vmin;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  margin-top: -170px;
+  color: #808080;
+  box-shadow: 2px 2px 10px black;
+  animation: fadeIn 1s;
+  padding: 0px 10px;
+}
+.form-center {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.form-right-card {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-left-card {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-left-card input,
+.form-right-card input,
+.form-right-card select {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.form-text-area {
+  height: 27vh;
+  padding: 10px;
+}
+
+.form-text-area textarea {
+  height: 23vmin;
+  width: 100%;
+  padding: 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #c9c9c9;
+  resize: none;
+  outline: none;
+}
+.form-right-card .slecet-option option {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 20px;
+}
+
+.afb-button{
+  height: 40px;
+  /* border: 1px solid black; */
+  margin: 3px 0px ;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+}
+.afb-button button{
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+  transition: 0.4s;
+  width: 100%;
+}
+.afb-button button:hover{
+  background-color: green;
+}

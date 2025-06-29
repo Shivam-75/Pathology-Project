@@ -1,0 +1,61 @@
+.billpdf {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.billpdf-card-container {
+  height: 450px;
+  border: 1px dashed rgb(160, 160, 160);
+  width: 80vmin;
+  border-radius: 10px;
+}
+.billpdf-card-container h2 {
+  text-align: center;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.billing-name {
+  border-bottom: 1px dashed rgb(160, 160, 160);
+  height: 40%;
+}
+.billing-name .bullpdf-contnent-p {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 15px;
+  align-items: center;
+}
+.bullpdf-contnent-p-amount {
+  height: 50%;
+  font-size: 15px;
+}
+.bullpdf-contnent-p-amount .bullpdf-contnent-p {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.billpdf-button{
+    width: 90%;
+    margin: 35px 20px;
+    padding: 10px 10px;
+    border-radius: 7px;
+    border: none;
+    transition: 1s;
+      border: 1px dashed rgb(160, 160, 160);
+
+}
+.billpdf-button:hover{
+    background-color: green;
+    color: white;
+    font-size: 15px;
+}
+@media (max-width:720px) {
+  .billpdf-card-container {
+    height: 500px;
+  }
+}

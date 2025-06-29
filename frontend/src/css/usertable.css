@@ -1,0 +1,43 @@
+.user-table{
+    /* height: 100vh; */
+    text-align: center;
+}
+.user-table h1{
+    font-size: 6vmin;
+    margin-top: 20px;
+    text-transform: capitalize;
+
+
+}
+
+.user-table .user-tables-data{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 2.5vmin;
+
+}
+
+table .crth{
+    height: 40px;
+    text-transform: capitalize;
+    border-bottom: 1px solid black;
+}
+
+table .crtr{
+    border: 1px solid black;
+    height: 50px;
+}
+.sg{
+    /* background-color: rgb(130, 79, 79); */
+}
+.usertable-item-tr td{
+    transition: 1s;
+}
+
+.usertable-item-tr td:hover{
+    background-color: red;
+    border-radius: 8px;
+    color: white;
+}
