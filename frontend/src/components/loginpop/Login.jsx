@@ -41,12 +41,12 @@ const Login = () => {
           navigate("/");
         }, 1500);
       } else {
+        setLogins({ email: "", password: "" });
         toast.error(data.message, tt);
-        console.log(data);
         return;
       }
     } catch (err) {
-      console.log(err);
+      toast.error("Server Error", tt);
     }
   };
 

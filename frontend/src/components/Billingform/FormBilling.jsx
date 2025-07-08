@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
 const FormBilling = () => {
-  const{tt} = useStore()
+  const { tt } = useStore();
   const { AuthorizedOrdnot } = useStore();
   const { bloodTest } = useStore();
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const FormBilling = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    console.log(typeof value)
+    console.log(typeof value);
 
     setdata((prevData) => ({
       ...prevData,
@@ -33,7 +33,7 @@ const FormBilling = () => {
 
     const totalmoney = cash + gpay;
     const finalAmount = totalmoney - (totalmoney * discountPercent) / 100;
-    
+
     const updatedData = {
       ...data,
       totalAmount: finalAmount,
@@ -54,14 +54,42 @@ const FormBilling = () => {
       const dt = await res.json();
       if (res.ok) {
         toast.success(dt.message, tt);
+        setdata({
+          name: "",
+          age: "",
+          referedBy: "",
+          date: "",
+          gender: "",
+          test: "",
+          cashAmount: "",
+          gPayAmount: "",
+          discount: "",
+          paidAmount: "",
+          mobile: "",
+          totalAmount: "",
+        });
         setTimeout(() => {
           navigate("/billpdf");
         }, 1300);
       } else {
+        setdata({
+          name: "",
+          age: "",
+          referedBy: "",
+          date: "",
+          gender: "",
+          test: "",
+          cashAmount: "",
+          gPayAmount: "",
+          discount: "",
+          paidAmount: "",
+          mobile: "",
+          totalAmount: "",
+        });
         toast.error(dt.message, tt);
       }
     } catch (err) {
-      console.error("Network Error:", err);
+      toast.error("Server Error ", tt);
     }
   };
 
@@ -184,7 +212,7 @@ const FormBilling = () => {
         </div>
         <button type="submit">Submit</button>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </form>
   );
 };

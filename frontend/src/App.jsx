@@ -14,29 +14,31 @@ import { useStore } from "./store/StoreContext";
 import Tests from "./components/tests/Tests";
 import Billpdf from "./components/billpdf/Billpdf";
 import Login from "./components/loginpop/Login";
+import AdminRoute from "./components/admin/Admin";
 
 const App = () => {
   const [showlogin, setshowlogin] = useState(false);
   const { deases, advance } = useStore();
-
 
   return (
     <>
       <div className="app">
         <Navbar setshowlogin={setshowlogin} />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/userdata" element={<Content />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/Appointment" element={<Appointment />} />
+          <Route element={<AdminRoute />}>
+            <Route path="/userdata" element={<Content />} />
+            <Route path="/Billing" element={<Billing />} />
+            <Route path="/billpdf" element={<Billpdf />} />
+          </Route>
           <Route path="Service" element={<Service />}>
             <Route path="shivam" element={<Tests items={deases} />} />
             <Route path="advance" element={<Tests items={advance} />} />
           </Route>
-          <Route path="/Billing" element={<Billing />} />
+          <Route path="/Appointment" element={<Appointment />} />
           <Route path="*" element={<Error />} />
-          <Route path="/billpdf" element={<Billpdf />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </div>
       <Fotter />

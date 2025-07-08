@@ -30,14 +30,14 @@ const Serach = () => {
       );
       const data = await res.json();
       if (res.ok) {
-        // console.log("res", data);
         setdataserach(data.data);
         toast.success(data.message, tt);
       } else {
-        console.log(data);
+        toast.success(data.message, tt);
       }
     } catch (err) {
-      console.log(err);
+      toast.success("Server Error", tt);
+
     }
   };
 

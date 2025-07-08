@@ -33,17 +33,18 @@ const Loginpop = () => {
       });
       const data = await res.json();
       if (res.ok) {
-        console.log("res the data", data);
         toast.success(data.message,tt)
         setregister({ name: "", email: "", password: "" });
         setTimeout(() => {
           navigate("/login");
         },1500)
       } else {
+        setregister({ name: "", email: "", password: "" });
+
         toast.error(data.message, tt);
       }
     } catch (err) {
-      console.log(err);
+      toast.error("Server Error", tt);
     }
   };
 

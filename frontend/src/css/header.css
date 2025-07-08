@@ -61,16 +61,10 @@
   color: wheat;
 }
 
-@media (max-width: 450px) {
 
+@media (max-width: 413px) {
   .header {
-    height: 55vh;
-  }
-}
-
-@media (max-width: 700px) {
-  .header {
-    height: 60vh;
+    height: 40vh;
   }
 }
 

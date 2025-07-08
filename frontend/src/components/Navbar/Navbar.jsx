@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import Curtime from "../time/time";
 const Navbar = ({ setshowlogin }) => {
   const { menu, setmenu, LoggdIn, Logout, admin } = useStore();
+  const [show, setshow] = useState(false);
   const navigate = useNavigate();
   return (
     <>
