@@ -12,14 +12,13 @@ export const Test1 = async (req, res)=>{
                 success:false
             })
         }
-        res.status(201).json({
+        return res.status(201).json({
             message: "Normal Test Data",
             success: true,
             data:noramTestData
         })
     } catch (err) {
-        console.log(err);
-        res.json({
+        return res.json({
             message: "Server Error Data Not Fatch ",
             success: false
         })
@@ -37,14 +36,13 @@ export const Test2 = async (req, res)=>{
                 success:false
             })
         }
-        res.status(201).json({
+        return res.status(201).json({
             message: "advance Test Data",
             success: true,
             data: advanceTestData
         })
     } catch (err) {
-        console.log(err);
-        res.json({
+        return res.json({
             message: "Server Error Data Not Fatch ",
             success: false
         })

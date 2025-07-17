@@ -28,13 +28,12 @@ export const register = async (req, res) => {
             email
         })
 
-        res.status(201).json({
+        return res.status(201).json({
             message: "User Register Successfully",
             success: true,
         })
     } catch (err) {
-        console.log(err);
-        res.json({
+        return res.json({
             message: "Server Error Data Not Fatch ",
             success: false
         })
@@ -68,7 +67,7 @@ export const login = async (req, res) => {
             isAdmin:userExist.isAdmin
         }, process.env.SECRET_KEY)
 
-        res.status(201).json({
+        return res.status(201).json({
             message: "User Register SuccessFully",
             success: true,
             Token: Token
@@ -76,7 +75,7 @@ export const login = async (req, res) => {
     }
     catch (err) {
         console.log(err);
-        res.json({
+        return res.json({
             message: "Server Error Data Not Fatch ",
             success: false
         })

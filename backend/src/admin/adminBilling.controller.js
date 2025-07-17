@@ -31,15 +31,13 @@ export const adminBilling = async (req, res) => {
 
         })
 
-        res.status(201).json({
+        return res.status(201).json({
             message: "Successfull Added",
             success: true,
         })
 
-
     } catch (err) {
-        console.log(err);
-        res.status(500).send({ message: "server side error", success: false })
+        return res.status(500).send({ message: "server side error", success: false })
     }
 
 } 
@@ -59,14 +57,13 @@ export const adminDataDate = async (req, res) => {
         }
         
         const datedata = await adminBillin.find({date:date})
-        res.json({
+        return res.json({
             message: "successfull data fatched",
             success: true,
             data: datedata
         });
     } catch (err) {
-        console.log(err);
-        res.json({
+        return res.json({
             message: "Server Error Data Not Fatch ",
             success:false
         })
@@ -81,14 +78,13 @@ export const getAdmin = async(req,res) => {
         if (!isAdmin) {
             return res.status(401).json({ message: "Access Denied Not a Admin" });
         }
-        res.json({
+        return res.json({
             message: "Admin data",
             success: true,
             isAdmin:isAdmin
         })
     }
     catch (err) {
-        console.log(err);
-        res.json({message:"admin  Server error"})
+        return res.json({message:"admin  Server error"})
     }
 }
