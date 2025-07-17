@@ -60,12 +60,12 @@ export const login = async (req, res) => {
                 success: true
             })
         }
-        const Token =  jwt.sign({
-            userId: userExist._id,
-            name: userExist.name,
-            email: userExist.email,
+        const Token =  await jwt.sign({
             isAdmin:userExist.isAdmin
-        }, process.env.SECRET_KEY)
+        },
+            process.env.SECRET_KEY,{expiresIn:"1d"}
+        )
+
 
         return res.status(201).json({
             message: "User Register SuccessFully",
@@ -81,3 +81,4 @@ export const login = async (req, res) => {
         })
     }
 }
+
