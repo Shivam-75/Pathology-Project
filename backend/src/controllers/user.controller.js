@@ -61,11 +61,12 @@ export const login = async (req, res) => {
             })
         }
         const Token =  await jwt.sign({
-            isAdmin:userExist.isAdmin
+            isAdmin: userExist.isAdmin,
+            email: userExist.email
         },
-            process.env.SECRET_KEY,{expiresIn:"1d"}
+            process.env.SECRET_KEY,
+            { expiresIn: "1d" }
         )
-
 
         return res.status(201).json({
             message: "User Register SuccessFully",
