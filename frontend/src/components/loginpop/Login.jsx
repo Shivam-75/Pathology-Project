@@ -37,6 +37,7 @@ const Login = () => {
       if (res.ok) {
         setToken(data.Token);
         setLogins({ email: "", password: "" });
+        console.log(data);
         toast.success(data.message, tt);
         setTimeout(() => {
           navigate("/");
@@ -44,7 +45,6 @@ const Login = () => {
       } else {
         setLogins({ email: "", password: "" });
         toast.error(data.message, tt);
-        return;
       }
     } catch (err) {
       toast.error("Server Error", tt);

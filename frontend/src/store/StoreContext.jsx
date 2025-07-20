@@ -130,9 +130,9 @@ export const StoreContextProvider = ({ children }) => {
       const data = await res.json();
       if (res.ok) {
         setadmin(data);
+        console.log(data);
       } else {
         setadmin(false);
-        return;
       }
     } catch (err) {
       return console.log(err);
