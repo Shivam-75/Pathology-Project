@@ -37,7 +37,7 @@ const Fotter = () => {
         <div className="footer-content-right">
           <h2>Get IN TOUGH</h2>
           <ul>
-            <li></li>
+            <li>+91 123456789</li>
             <li>contact@gmail.com</li>
           </ul>
         </div>

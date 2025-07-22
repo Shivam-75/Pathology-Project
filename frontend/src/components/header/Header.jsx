@@ -18,10 +18,21 @@ const Header = () => {
       <div className="header">
         <div className="header-left">
           <div className="header-content">
-            <h1>Services Provided best of the best</h1>
+            <h1>Our Pathology Services – Best of the Best</h1>{" "}
             <p>
-              24/7 Online Report Access Access all your reports anytime,
-              anywhere via a secure online portal.
+              <strong>24/7 Online Report Access: </strong> Get secure access to
+              your pathology test reports anytime, anywhere through our
+              user-friendly online portal.
+            </p>
+            <p>
+              <strong>Accurate & Timely Diagnostics:</strong> Our lab is
+              equipped with state-of-the-art technology to deliver precise and
+              quick results, ensuring timely diagnosis and treatment planning.
+            </p>
+            <p>
+              <strong>Expert Pathologists:</strong> Your tests are reviewed by
+              certified and experienced pathologists ensuring accuracy,
+              reliability, and expert interpretation.
             </p>
             {LoggdIn ? (
               <button

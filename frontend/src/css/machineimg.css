@@ -20,7 +20,6 @@
   height: 25vmin;
 }
 .machine-img-content {
-  height: calc(38vmin - 184px);
   padding: 10px;
   text-transform: capitalize;
   overflow: hidden;
@@ -46,11 +45,7 @@
   padding-bottom: 120px;
   font-family: cursive;
 }
-@media (max-width: 750px) {
-  .machine-flex-outer-box {
-    justify-content: center;
-  }
-}
+
 
 @media (max-width: 750px) {
   .pathology-machine-contents {
@@ -69,8 +64,11 @@
     margin: 0px;
   }
   .machine-img img {
-    height: 40vmin;
+    height: 35vmin;
     padding: 0px;
     margin: 0;
+  }
+    .machine-flex-outer-box {
+    justify-content: center;
   }
 }

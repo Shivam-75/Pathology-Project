@@ -31,9 +31,9 @@ const Apform = () => {
 
   return (
     <>
-      <h1 className="test-from-header">Ultrasound Test Booking Form</h1>
       <div className="Appintment-form">
         <form ref={form} onSubmit={sendEmail} className="appintment-form-card">
+      <h1 className="test-from-header">Ultrasound Test Booking Form</h1>
           <div className="form-center">
             <div className="form-left-card">
               <input
@@ -63,14 +63,12 @@ const Apform = () => {
               </select>
             </div>
           </div>
-          <div className="afb-button">
-            <button type="submit">Submit</button>
-          </div>
           <div className="form-text-area">
             <textarea
               name="message"
               placeholder="Additional comments"
               rows="4"></textarea>
+            <button type="submit">Submit</button>
           </div>
         </form>
         <ToastContainer/>

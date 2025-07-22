@@ -1,11 +1,14 @@
 .navbar {
   width: 100%;
-  border: 1px solid  black;
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 70px;
-
+  box-shadow: 0px 0px 20px rgb(180, 170, 170); 
+  position: sticky;
+  background-color: white;
+  z-index: 1;
+  top: 0px;
 }
 .navbar .logo {
   font-size: 4.5vmin;
@@ -25,9 +28,10 @@ a {
 .navbar-right {
   display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 20px;
   
 }
+
 .navbar button {
   background: transparent;
   font-size: 16px;
