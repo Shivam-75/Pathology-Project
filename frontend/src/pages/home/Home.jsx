@@ -12,9 +12,10 @@ const Home = () => {
           we provided every tests
         </marquee>
         <p className="pathology-machine-contents">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dicta
-          illo recusandae et quis nulla accusamus unde non fugit omnis, cumque,
-          aperiam ipsam soluta excepturi. Ex reiciendis maiores illum unde?
+          Our lab is equipped with state-of-the-art diagnostic machines to
+          ensure the highest accuracy and reliability in every test we conduct.
+          From routine blood tests to advanced molecular diagnostics, we cover
+          it all — with precision, speed, and care.
         </p>
         <Machineimg pathologyMachineimgs={pathologyMachineimgs} />
       </>

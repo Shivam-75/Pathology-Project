@@ -1,10 +1,9 @@
 .viraldease-header-img {
   width: 100%;
   display: flex;
-
 }
-.viral-deasese{
-  overflow:hidden;
+.viral-deasese {
+  overflow: hidden;
   margin-bottom: 20px;
 }
 .viraldease-header-img img {
@@ -36,9 +35,10 @@
 }
 .viraldease-header-content h1 {
   padding-bottom: 20px;
+  font-size: 6.5vmin;
 }
 .viraldease-header-content p {
-  word-spacing: 2vmin;
+  word-spacing: 1vmin;
   line-height: 3vmin;
   font-size: 2vmin;
 }
@@ -50,14 +50,13 @@
   font-size: 2vmin;
   padding: 2px 0;
 }
-@media (max-width:850px) {
+@media (max-width: 850px) {
   .viraldease-header-img img {
     align-self: center;
   }
- 
 }
 
-.virals-dease-bottom-imgs{
+.virals-dease-bottom-imgs {
   margin-bottom: 20px;
   width: 100%;
   display: flex;
@@ -65,32 +64,36 @@
   align-items: center;
 }
 
-.virals-dease-bottom-imgs img{
+.virals-dease-bottom-imgs img {
   width: 40vmin;
 }
-.virals-dease-bottom-imgs .sg{
+.virals-dease-bottom-imgs .sg {
   animation: error 0.2s infinite;
+}
+.vrl-content-p p {
+  font-size: 1.9vmin;
+  padding: 10px 0px;
+  word-spacing: 1vmin;
+    line-height: 3vmin;
+  font-size: 2vmin;
 
 }
-.vrl-content-p p{
-    font-size: 1.9vmin;
-    padding: 10px 0px;
-}
-.vrl-content-p{
+.vrl-content-p {
   width: 40%;
   padding: 10px;
+  
 }
-.vrl-content-p h1{
-  font-size: 2vw;
-  margin: 10px 0px;
+.vrl-content-p h1 {
+  font-size: 4vmin;
   text-transform: capitalize;
+  padding-bottom: 20px;
 }
-@media (max-width:750px) {
+@media (max-width: 750px) {
   .viraldease-header-img {
     margin-bottom: 10px;
   }
-  .viral-deasese{
-    overflow:hidden;
+  .viral-deasese {
+    overflow: hidden;
     margin-bottom: 0;
   }
 }

@@ -28,17 +28,31 @@ const Viraldeases = () => {
         </div>
       </div>
       <div className="virals-dease-bottom-imgs">
-          <img src={assets.viraldease1} alt="" />
-          <div className="vrl-content-p">
-            <h1>this is my best website</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Exercitationem, quisquam officiis aliquid libero suscipit unde
-              quos ad tenetur accusamus vero recusandae dignissimos! Dolorum,
-              voluptate? Hic deserunt autem aperiam in fugit?
-            </p>
-          </div>
-          <img className="sg" src={assets.viraldease2} alt="" />
+        <div className="vrl-content-p">
+          <h1>Trusted Diagnostics Accurate Results  Always.</h1>
+          <p>
+            Welcome to{" "}
+            <strong>
+              {" "}
+              Perfect diagnostic and ultrasound centre partawal bajar
+              maharajganj
+            </strong>
+            , your trusted partner in advanced medical diagnostics. We combine
+            cutting-edge technology, certified professionals, and compassionate
+            care to deliver accurate, timely, and reliable test results — every
+            time. Whether it's a routine blood test or a specialized health
+            checkup, our state-of-the-art facilities and doorstep sample
+            collection services ensure a hassle-free experience for you and your
+            loved ones.
+          </p>
+          <p>
+            Experience the best of the best in pathology services — because your
+            health deserves nothing less.
+          </p>
+        </div>
+        <img src={assets.viraldease1} alt="" />
+
+        {/* <img className="sg" src={assets.viraldease2} alt="" /> */}
       </div>
     </div>
   );

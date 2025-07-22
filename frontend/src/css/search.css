@@ -42,7 +42,7 @@
   .search-inputs {
     height: 40vmin;
     border: 1px solid black;
-    width: 70vmin;
+    width: 90vmin;
     display: flex;
     justify-content: center;
     border-radius: 10px;

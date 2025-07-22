@@ -151,6 +151,7 @@ export const StoreContextProvider = ({ children }) => {
   useEffect(() => {
     AdminorNot();
   }, [tokenData]);
+  
   const [data, setdata] = useState({
     name: "",
     age: "",

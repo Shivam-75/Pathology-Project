@@ -6,12 +6,18 @@ const Fotter = () => {
     <div className="footer">
       <div className="footer-content">
         <div className="fotter-content-left">
-          <h1>pathology</h1>
+          <h1>Pathology</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic dicta,
-            fuga aliquam dolor doloribus eos nesciunt tempore repellendus ullam
-            voluptates at, quasi impedit, cupiditate officia odio cumque.
-            Beatae, cumque laboriosam.
+            © 2025{" "}
+            <strong>
+              {" "}
+              Perfect diagnostic and ultrasound centre partawal bajar
+              maharajganj
+            </strong>
+            . All rights reserved. We are committed to delivering accurate,
+            timely, and affordable diagnostic services. From basic health
+            screenings to advanced pathology tests, our goal is to support
+            healthier communities with precision and care.
           </p>
           <div className="fotter-social-icons">
             <img src={assets.facebook_icon} alt="" />
@@ -31,15 +37,15 @@ const Fotter = () => {
         <div className="footer-content-right">
           <h2>Get IN TOUGH</h2>
           <ul>
-            <li>+1-22-334-2344</li>
+            <li></li>
             <li>contact@gmail.com</li>
           </ul>
         </div>
-          </div>
-          <hr />
-          <p className="footer-copyright">
-              Copyright 2024 0 Pathology.com - All right reserver
-          </p>
+      </div>
+      <hr />
+      <p className="footer-copyright">
+        Copyright 2024 0 Pathology.com - All right reserver
+      </p>
     </div>
   );
 };

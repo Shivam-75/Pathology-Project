@@ -11,9 +11,7 @@ const Header = () => {
       <div className="header-front">
         <div className="header-front-content">
           <div className="scroll-text">
-           
-              perfect diagnostic and ultrasound centre partawal bajar
-              maharajganj
+            perfect diagnostic and ultrasound centre partawal bajar maharajganj
           </div>
         </div>
       </div>
@@ -22,10 +20,8 @@ const Header = () => {
           <div className="header-content">
             <h1>Services Provided best of the best</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-              culpa, possimus, enim commodi sed iste magni debitis pariatur nam
-              distinctio vero dolor, rerum qui neque error praesentium totam
-              beatae inventore?
+              24/7 Online Report Access Access all your reports anytime,
+              anywhere via a secure online portal.
             </p>
             {LoggdIn ? (
               <button

@@ -4,7 +4,6 @@ import { useStore } from "../../store/StoreContext";
 
 const AdminRoute = () => {
   const { admin } = useStore();
-  console.log(admin);
 
   if (admin?.isAdmin !== true) {
     return <Navigate to="/login" />;

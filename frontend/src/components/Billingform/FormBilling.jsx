@@ -16,8 +16,6 @@ const FormBilling = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    console.log(typeof value);
-
     setdata((prevData) => ({
       ...prevData,
       [name]: value,
@@ -48,26 +46,15 @@ const FormBilling = () => {
           "Content-Type": "application/json",
           Authorization: AuthorizedOrdnot,
         },
-        body: JSON.stringify(updatedData), // Use updatedData instead of data
+        body: JSON.stringify(updatedData),
+        
       });
+
 
       const dt = await res.json();
       if (res.ok) {
         toast.success(dt.message, tt);
-        setdata({
-          name: "",
-          age: "",
-          referedBy: "",
-          date: "",
-          gender: "",
-          test: "",
-          cashAmount: "",
-          gPayAmount: "",
-          discount: "",
-          paidAmount: "",
-          mobile: "",
-          totalAmount: "",
-        });
+       
         setTimeout(() => {
           navigate("/billpdf");
         }, 1300);

@@ -22,7 +22,6 @@
 @media (max-width:750px) {
     .serive-button-navigator{
         width: 90vmin;
-        height: 20vmin;
         display: flex;
         justify-content: space-around;
         align-items: center;

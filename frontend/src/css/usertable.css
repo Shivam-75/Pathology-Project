@@ -34,6 +34,7 @@ table .crtr{
 }
 .usertable-item-tr td{
     transition: 1s;
+    text-transform: capitalize;
 }
 
 .usertable-item-tr td:hover{

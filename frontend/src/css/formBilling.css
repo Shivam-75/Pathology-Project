@@ -6,7 +6,6 @@
   align-items: center;
 }
 .form-billing-inner-card {
-  height: 75vh;
   width: 90vmin;
   border-radius: 10px;
   overflow: hidden;
@@ -76,11 +75,4 @@
   .billpdf-button{
     display: none;
   }
-}
-@media (max-width: 415px) and (max-height: 917px) {
-  .form-billing-inner-card {
-    height: 58vh;
-  }
- 
-  
 }

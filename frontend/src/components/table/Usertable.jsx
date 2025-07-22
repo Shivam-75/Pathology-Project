@@ -11,7 +11,7 @@ const Usertable = () => {
     });
     setUserId(result);
     navi("/billpdf");
-
+    console.log(result)
   };
 
   return (
@@ -28,9 +28,11 @@ const Usertable = () => {
           </tr>
         </thead>
         <tbody>
-          {dateseracg?.map((item,index) => {
+          {dateseracg?.map((item, index) => {
+            console.log(item)
             return (
-              <tr key={index}
+              <tr
+                key={index}
                 onClick={(e) => {
                   getdatass(item._id);
                 }}
@@ -39,7 +41,7 @@ const Usertable = () => {
                 <td>{item.mobile}</td>
                 <td>{item.date}</td>
                 <td>{item.referedBy}</td>
-                <td>{item.totalAmount}</td>
+                <td>{item.paidAmount}</td>
               </tr>
             );
           })}

@@ -1,30 +1,32 @@
 .navbar {
-  height: 70px;
-  padding: 20px 20px;
+  width: 100%;
+  border: 1px solid  black;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position:sticky;
-  top: 0;
-  z-index: 1;
-  background-color: white;
-  box-shadow: 8px 9px 20px black;
+  justify-content: space-around;
+  height: 70px;
+
 }
 .navbar .logo {
-  font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 4.5vmin;
 }
 .navbar-menu {
+  font-size: 2.5vmin;
   display: flex;
-  list-style: none;
-  gap: 20px;
-  color: #49557e;
-  font-size: 18px;
+  align-items: center;
+  column-gap: 20px;
+  
 }
+a {
+ text-decoration: none;
+ font-weight: 600;
+}
+
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 40px;
+  column-gap: 10px;
+  
 }
 .navbar button {
   background: transparent;
@@ -45,63 +47,20 @@
   color: tomato;
 }
 
-.navbar-serach-icon {
-  position: relative;
-}
-
-@media (max-width: 1050px) {
-  .navbar .logo {
-    width: 140px;
-  }
-  .navbar-menu {
-    gap: 20px;
-    font-size: 17px;
-  }
-  .navbar-right {
-    gap: 30px;
-  }
-  .navbar-right img {
-    width: 22px;
-  }
-  .navbar-right button {
-    padding: 8px 25px;
-  }
-}
-
-@media (max-width: 900px) {
-  .navbar .logo {
-    width: 120px;
-  }
-  .navbar-menu {
-    gap: 15px;
-    font-size: 16px;
-  }
-  .navbar-right {
-    gap: 20px;
-  }
-  .navbar-right img {
-    width: 20px;
-  }
-  .navbar-right button {
-    padding: 7px 20px;
-    font-size: 15px;
-  }
-}
 @media (max-width: 750px) {
   .logo{
     display: none;
   }
-  .navbar-right{
+  .navbar-right button{
     display: none;
   }
+   .navbar-right img{
+    margin-right: 30px;
+    height: 6.5vmin;
+   }
   .navbar-menu{
     justify-content: center;
     width: 100%;
+    font-size: 3.5vmin;
   }
-}
-a {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 600;
-  color: #000000;
-}
+} 

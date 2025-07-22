@@ -17,7 +17,9 @@
   padding: 0px 0px 0px 15vw;
 }
 .header-content h1 {
-  font-size: 7vmin;
+  font-size: 5vmin;
+  text-transform: capitalize;
+  
   padding-bottom: 20px;
 }
 .header-content p {
