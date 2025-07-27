@@ -29,15 +29,15 @@ const Viraldeases = () => {
       </div>
       <div className="virals-dease-bottom-imgs">
         <div className="vrl-content-p">
-          <h1>Trusted Diagnostics Accurate Results  Always.</h1>
+          <h1>Trusted Diagnostics. Accurate Results. Always.</h1>
           <p>
             Welcome to{" "}
             <strong>
               {" "}
-              Perfect diagnostic and ultrasound centre partawal bajar
-              maharajganj
+              Perfect Diagnostic and Ultrasound Centre, Partawal Bazar,
+              Maharajganj,
             </strong>
-            , your trusted partner in advanced medical diagnostics. We combine
+             your trusted partner in advanced medical diagnostics. We combine
             cutting-edge technology, certified professionals, and compassionate
             care to deliver accurate, timely, and reliable test results — every
             time. Whether it's a routine blood test or a specialized health

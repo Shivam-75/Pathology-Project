@@ -13,9 +13,9 @@ const Home = () => {
         </marquee>
         <p className="pathology-machine-contents">
           Our lab is equipped with state-of-the-art diagnostic machines to
-          ensure the highest accuracy and reliability in every test we conduct.
-          From routine blood tests to advanced molecular diagnostics, we cover
-          it all — with precision, speed, and care.
+          ensure the highest levels of accuracy and reliability in every test we
+          perform. From routine blood work to advanced molecular diagnostics, we
+          cover it all — with precision, speed, and compassionate care.
         </p>
         <Machineimg pathologyMachineimgs={pathologyMachineimgs} />
       </>

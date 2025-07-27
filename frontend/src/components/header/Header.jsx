@@ -10,7 +10,8 @@ const Header = () => {
       <div className="header-front">
         <div className="header-front-content">
           <div className="scroll-text">
-            perfect diagnostic and ultrasound centre partawal bajar maharajganj
+            Perfect Diagnostic and Ultrasound Centre, Partawal Bazar,
+            Maharajganj
           </div>
         </div>
       </div>
