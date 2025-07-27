@@ -2,12 +2,15 @@ import React from "react";
 import "../../css/tests.css";
 import { NavLink } from "react-router-dom";
 import { useStore } from "../../store/StoreContext";
+import Loader from "../loader/Loader";
 
 const Tests = ({ items }) => {
   const { setmenu } = useStore();
 
   
-  return (
+  return items.length == 0 ? (
+     <Loader/>
+  ) : (
     <div className="container">
       {items.map((data, index) => {
         return (
@@ -31,9 +34,12 @@ const Tests = ({ items }) => {
             <div className="test-info">
               <strong>Price:</strong> {data?.lab_rate || data?.price} ₹
             </div>
-            <NavLink to={"/Appointment"} className="btn" onClick={() => {
-              setmenu("")
-            }}>
+            <NavLink
+              to={"/Appointment"}
+              className="btn"
+              onClick={() => {
+                setmenu("");
+              }}>
               Book Now
             </NavLink>
           </div>

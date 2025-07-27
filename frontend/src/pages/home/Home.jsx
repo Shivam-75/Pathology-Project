@@ -1,7 +1,7 @@
 import Header from "../../components/header/Header";
 import Viraldeases from "../../components/viralDease/Viraldeases";
 import Machineimg from "../../components/machine_img/Machineimg";
-import { pathologyMachineimgs } from "../../assets/frontend_assets/assets";
+import { pathologyMachineimgs } from "../../../public/frontend_assets/assets";
 const Home = () => {
   return (
     <div className="Home">

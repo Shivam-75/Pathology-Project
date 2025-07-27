@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "../../css/error.css";
-import { assets } from "../../assets/frontend_assets/assets.js";
+import { assets } from "../../../public/frontend_assets/assets.js";
 import { useNavigate } from "react-router-dom";
 import { useStore } from "../../store/StoreContext.jsx";
 const Error = () => {

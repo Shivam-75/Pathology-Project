@@ -6,7 +6,7 @@ const Service = () => {
   const navigate = useNavigate();
   return (
     <div className={"service"}>
-      <h1>Available Pathology Tests</h1>
+      <h1>Pathology Tests</h1>
       <div className="serive-button-navigator">
         <button className="btn" onClick={() => {navigate("/Service/shivam")}}>
           Normal Test

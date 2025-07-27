@@ -30,6 +30,9 @@
   text-decoration: none;
   margin-top: 10px;
 }
+.btn:hover:active{
+  background-color: red;
+}
 @media (max-width: 600px) {
   .test-card {
     padding: 15px;

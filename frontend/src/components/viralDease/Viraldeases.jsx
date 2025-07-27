@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/Viraldeases.css";
-import { assets } from "../../assets/frontend_assets/assets";
+import { assets } from "../../../public/frontend_assets/assets";
 import Tests from "../tests/Tests";
 const Viraldeases = () => {
   return (

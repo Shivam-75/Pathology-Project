@@ -19,7 +19,7 @@
 .header-content h1 {
   font-size: 5vmin;
   text-transform: capitalize;
-  
+
   padding-bottom: 20px;
 }
 .header-content p {
@@ -63,10 +63,9 @@
   color: wheat;
 }
 
-
 @media (max-width: 413px) {
   .header {
-    height: 40vh;
+    height: 50vh;
   }
 }
 
@@ -75,30 +74,35 @@
   white-space: nowrap;
 }
 
-
 .scroll-text {
   display: inline-block;
-  animation: scroll 15s linear infinite;
-  font-size: 80px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 20vmin;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: capitalize;
-  background: linear-gradient(to right ,rgb(255, 0, 43),cyan,yellow);
-  background-clip: text;
   font-weight: 900;
   color: transparent;
   margin-top: 50px;
+ background: linear-gradient(
+  to bottom,
+  #FF671F 50%,
+  #FFFFFF 50%,
+  #FFFFFF 70%, 
+  #046A38 50%  
+);
+  background-clip: text;
+  animation: scroll 15s linear infinite;
 }
 
 @keyframes scroll {
   from {
-    transform: translateX(100%);
+    transform: translateX(50%);
   }
   to {
     transform: translateX(-100%);
   }
 }
-@media (max-width:750px) {
-  .scroll-text{
+@media (max-width: 750px) {
+  .scroll-text {
     margin-top: 0;
   }
 }

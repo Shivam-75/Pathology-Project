@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../../css/loginpop.css";
-import { assets } from "../../assets/frontend_assets/assets";
+import { assets } from "../../../public/frontend_assets/assets";
 import { useNavigate } from "react-router-dom";
 import {ToastContainer,toast} from "react-toastify"
 import { useStore } from "../../store/StoreContext";

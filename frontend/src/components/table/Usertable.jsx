@@ -11,7 +11,6 @@ const Usertable = () => {
     });
     setUserId(result);
     navi("/billpdf");
-    console.log(result)
   };
 
   return (

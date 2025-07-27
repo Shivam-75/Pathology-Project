@@ -24,7 +24,7 @@ const Apform = () => {
           form.current.reset();
         },
         (error) => {
-          toast.error("❌ Failed to send email:", tt);
+          toast.error(`❌ Failed to send email: ${error.message}`, tt);
         }
       );
   };
@@ -33,7 +33,7 @@ const Apform = () => {
     <>
       <div className="Appintment-form">
         <form ref={form} onSubmit={sendEmail} className="appintment-form-card">
-      <h1 className="test-from-header">Ultrasound Test Booking Form</h1>
+          <h1 className="test-from-header">Ultrasound Test Booking Form</h1>
           <div className="form-center">
             <div className="form-left-card">
               <input
@@ -71,7 +71,7 @@ const Apform = () => {
             <button type="submit">Submit</button>
           </div>
         </form>
-        <ToastContainer/>
+        <ToastContainer />
       </div>
     </>
   );

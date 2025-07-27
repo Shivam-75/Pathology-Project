@@ -1,6 +1,5 @@
-import React from "react";
 import "../../css/header.css";
-import { assets } from "../../assets/frontend_assets/assets";
+import { assets } from "../../../public/frontend_assets/assets";
 import { useNavigate } from "react-router-dom";
 import { useStore } from "../../store/StoreContext";
 const Header = () => {
