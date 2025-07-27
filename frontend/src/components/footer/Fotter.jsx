@@ -37,8 +37,9 @@ const Fotter = () => {
         <div className="footer-content-right">
           <h2>Get IN TOUGH</h2>
           <ul>
-            <li>+91 123456789</li>
-            <li>contact@gmail.com</li>
+            <li>+91 9616434212</li>
+            <li>+91 9838104111</li>
+            <li>thanos.spider01@gmail.com</li>
           </ul>
         </div>
       </div>
