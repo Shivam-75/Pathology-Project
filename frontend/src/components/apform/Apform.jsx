@@ -41,12 +41,14 @@ const Apform = () => {
                 name="user_name"
                 placeholder="Enter Your Name"
                 required
+                autoComplete="off"
               />
               <input
                 type="number"
                 name="user_phone"
                 placeholder="Enter your Number"
                 required
+                autoComplete="off"
               />
             </div>
             <div className="form-right-card">
@@ -67,6 +69,7 @@ const Apform = () => {
             <textarea
               name="message"
               placeholder="Additional comments"
+              autoComplete="off"
               rows="4"></textarea>
             <button type="submit">Submit</button>
           </div>

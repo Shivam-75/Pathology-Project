@@ -4,7 +4,7 @@ export const adminBilling = async (req, res) => {
     try {
         const { name, referedBy,date, gender, age, cashAmount, gPayAmount,test, discount, paidAmount, mobile, totalAmount } = req.body;
 
-        if (!name || !referedBy || !test||!date|| !gender || !age || !cashAmount || !gPayAmount || !discount || !paidAmount || !mobile ) {
+        if (!name || !referedBy || !test||!date|| !gender || !age || !cashAmount || !discount || !paidAmount || !mobile ) {
             return res.status(400).json({ message: "Fill All Coulumn " })
         }
 

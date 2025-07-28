@@ -11,7 +11,7 @@ function Billpdf() {
     <div className="billpdf">
       <div className="billpdf-card-container">
         <h2>
-          Perfect diagnostic and ultrasound centre partawal bajar maharajganj
+          Perfect diagnostic and ultrasound centre partawal bazar maharajganj
         </h2>
         <div className="billing-name">
           <div className="bullpdf-contnent-p">

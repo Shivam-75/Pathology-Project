@@ -28,6 +28,11 @@
 .footer-content-right h2, .footer-content-center h2{
     color: white;
 }
+.fotter-content-left h1{
+    font-size: 3.5vmin;
+}
+
+
 
 .fotter-social-icons{
     display: flex; 

@@ -19,7 +19,6 @@
 }
 .billing-name {
   border-bottom: 1px dashed rgb(160, 160, 160);
-  height: 40%;
 }
 .billing-name .bullpdf-contnent-p {
   display: flex;
@@ -39,23 +38,32 @@
   font-size: 15px;
 }
 
-.billpdf-button{
-    width: 90%;
-    margin: 35px 20px;
+.billpdf-button {
+  width: 97%;
+  margin: 5px 10px;
+  padding: 10px 10px;
+  border-radius: 7px;
+  border: none;
+  transition: 1s;
+  border: 1px dashed rgb(160, 160, 160);
+}
+@media (max-width: 750px) {
+  .billpdf-button {
+    width: 93%;
     padding: 10px 10px;
     border-radius: 7px;
     border: none;
     transition: 1s;
-      border: 1px dashed rgb(160, 160, 160);
-
+    border: 1px dashed rgb(160, 160, 160);
+  }
 }
-.billpdf-button:hover{
-    background-color: green;
-    color: white;
-    font-size: 15px;
+.billpdf-button:hover {
+  background-color: green;
+  color: white;
+  font-size: 15px;
 }
-@media (max-width:720px) {
+@media (max-width: 720px) {
   .billpdf-card-container {
-    height: 500px;
+    height: 470px;
   }
 }

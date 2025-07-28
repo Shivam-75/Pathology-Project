@@ -6,7 +6,7 @@ const Fotter = () => {
     <div className="footer">
       <div className="footer-content">
         <div className="fotter-content-left">
-          <h1>Pathology</h1>
+          <h1>PATHOLOGY</h1>
           <p>
             © 2025{" "}
             <strong>
@@ -26,7 +26,7 @@ const Fotter = () => {
           </div>
         </div>
         <div className="footer-content-center">
-          <h2>Pathology</h2>
+          <h2>PATHOLOGY </h2>
           <ul>
             <li>Home</li>
             <li>About us</li>
@@ -35,7 +35,7 @@ const Fotter = () => {
           </ul>
         </div>
         <div className="footer-content-right">
-          <h2>Get IN TOUGH</h2>
+          <h2>GET IN TOUGH</h2>
           <ul>
             <li>+91 9616434212</li>
             <li>+91 9838104111</li>

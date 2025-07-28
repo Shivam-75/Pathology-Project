@@ -47,17 +47,13 @@ const FormBilling = () => {
           Authorization: AuthorizedOrdnot,
         },
         body: JSON.stringify(updatedData),
-        
       });
-
-
       const dt = await res.json();
       if (res.ok) {
         toast.success(dt.message, tt);
-       
-        setTimeout(() => {
-          navigate("/billpdf");
-        }, 1300);
+        
+        navigate("/billpdf");
+
       } else {
         setdata({
           name: "",
@@ -93,6 +89,7 @@ const FormBilling = () => {
               placeholder="Enter Patient Name"
               onChange={handleChange}
               required
+              autoComplete="off"
             />
             <input
               name="age"
@@ -101,6 +98,7 @@ const FormBilling = () => {
               placeholder="Enter Patient Age"
               onChange={handleChange}
               required
+              autoComplete="off"
             />
             <select
               name="referedBy"
@@ -120,6 +118,7 @@ const FormBilling = () => {
               placeholder="Mobile No"
               onChange={handleChange}
               required
+              autoComplete="off"
             />
             <input
               name="cashAmount"
@@ -128,14 +127,16 @@ const FormBilling = () => {
               placeholder="Cash Amount"
               onChange={handleChange}
               required
+              autoComplete="off"
             />
             <input
               name="gPayAmount"
               value={data.gPayAmount}
               type="number"
               placeholder="G-Pay Amount"
+              autoComplete="off"
               onChange={handleChange}
-              required
+              // required
             />
           </div>
           <div className="form-billing-header-right">
@@ -145,6 +146,7 @@ const FormBilling = () => {
               type="date"
               onChange={handleChange}
               required
+              autoComplete="off"
             />
             <select
               name="gender"
@@ -177,6 +179,7 @@ const FormBilling = () => {
               placeholder="Discount %"
               onChange={handleChange}
               required
+              autoComplete="off"
             />
             <input
               name="paidAmount"
@@ -185,6 +188,7 @@ const FormBilling = () => {
               placeholder="Paid Amount"
               onChange={handleChange}
               required
+              autoComplete="off"
             />
 
             <p>{` Total Ammount  : ${
