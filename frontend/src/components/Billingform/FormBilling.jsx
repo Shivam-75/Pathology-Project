@@ -124,7 +124,7 @@ const FormBilling = () => {
               name="cashAmount"
               value={data.cashAmount}
               type="number"
-              placeholder="Cash Amount"
+              placeholder="Cash Amount Pay"
               onChange={handleChange}
               required
               autoComplete="off"
@@ -133,7 +133,7 @@ const FormBilling = () => {
               name="gPayAmount"
               value={data.gPayAmount}
               type="number"
-              placeholder="G-Pay Amount"
+              placeholder="Online Amount Pay"
               autoComplete="off"
               onChange={handleChange}
               // required
@@ -185,7 +185,7 @@ const FormBilling = () => {
               name="paidAmount"
               value={data.paidAmount}
               type="number"
-              placeholder="Paid Amount"
+              placeholder="Total Paid Amount"
               onChange={handleChange}
               required
               autoComplete="off"

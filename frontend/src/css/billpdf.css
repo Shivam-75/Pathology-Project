@@ -1,5 +1,5 @@
 .billpdf {
-  height: 90vh;
+  /* height: 90vh; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -7,18 +7,21 @@
 }
 
 .billpdf-card-container {
+  margin-top: 20px;
   height: 450px;
-  border: 1px dashed rgb(160, 160, 160);
+  /* border: 1px dashed rgb(160, 160, 160); */
   width: 80vmin;
   border-radius: 10px;
 }
 .billpdf-card-container h2 {
   text-align: center;
   padding: 10px;
+  font-size: 3.9vmin;
+  color: blue;
   text-transform: capitalize;
 }
 .billing-name {
-  border-bottom: 1px dashed rgb(160, 160, 160);
+  border-bottom: 2px dashed rgba(15, 5, 5, 1);
 }
 .billing-name .bullpdf-contnent-p {
   display: flex;
@@ -26,6 +29,7 @@
   padding: 15px;
   font-size: 15px;
   align-items: center;
+  
 }
 .bullpdf-contnent-p-amount {
   height: 50%;
@@ -36,6 +40,7 @@
   justify-content: space-between;
   padding: 15px;
   font-size: 15px;
+  color: red;
 }
 
 .billpdf-button {
@@ -45,7 +50,7 @@
   border-radius: 7px;
   border: none;
   transition: 1s;
-  border: 1px dashed rgb(160, 160, 160);
+  border: 1px solid rgb(160, 160, 160);
 }
 @media (max-width: 750px) {
   .billpdf-button {

@@ -58,18 +58,21 @@ function Billpdf() {
         <div className="bullpdf-contnent-p-amount">
           <div className="bullpdf-contnent-p">
             <p>
-              <strong> Cash Amount : </strong>
+              <strong> Cash Amount Pay : </strong>
               {aa ? userId[0].cashAmount : data.cashAmount} ₹{" "}
             </p>
             <p>
-              <strong>G-pay Amount : </strong>
+              <strong>Online Amount Pay : </strong>
               {aa ? userId[0].gPayAmount : data.gPayAmount} ₹
             </p>
           </div>
           <div className="bullpdf-contnent-p">
             <p>
-              <strong>Paid Amount :</strong>{" "}
+              <strong>Total Paid Amount :</strong>{" "}
               {aa ? userId[0].paidAmount : data.paidAmount} ₹
+            </p>
+            <p>
+              <strong>Signature : ............................</strong>{" "}
             </p>
           </div>
           <button
