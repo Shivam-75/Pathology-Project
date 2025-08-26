@@ -6,7 +6,7 @@
   align-items: center;
 }
 .form-billing-inner-card {
-  width: 90vmin;
+  width: 99vmin;
   border-radius: 10px;
   overflow: hidden;
   padding: 30px;
@@ -17,7 +17,6 @@
 .form-billing-upper-header {
   display: flex;
   margin-bottom: 10px;
-
 }
 .form-billing-inner-card h1 {
   text-align: center;
@@ -37,8 +36,6 @@
   gap: 20px;
   margin: 10px;
 }
-
-
 
 .form-billing-upper-header input,
 .form-billing-upper-header select {
@@ -72,7 +69,18 @@
   .footer {
     display: none;
   }
-  .billpdf-button{
+  .billpdf-button {
     display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .form-billing-inner-card {
+    padding: 10px;
+  }
+}
+@media (max-width: 750px) {
+  .form-billing-inner-card {
+    padding: 10px;
   }
 }

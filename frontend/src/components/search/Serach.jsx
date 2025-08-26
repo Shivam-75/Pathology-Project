@@ -4,7 +4,7 @@ import { useStore } from "../../store/StoreContext";
 import { useState } from "react";
 import { toast ,ToastContainer } from "react-toastify";
 const Serach = () => {
-  const { AuthorizedOrdnot, setdataserach,tt } = useStore();
+  const { AuthorizedOrdnot, setlaodingPatent,setdataserach, tt } = useStore();
   const [datess, setdatess] = useState("");
 
   const clickhandel = (e) => {
@@ -17,6 +17,7 @@ const Serach = () => {
     setdatess(value);
   };
   const SeratchingUserData = async () => {
+    setlaodingPatent(true);
     try {
       const res = await fetch(
         `http://localhost:9000/api/admin/adminbillingdata?date=${datess}`,
@@ -32,6 +33,7 @@ const Serach = () => {
       if (res.ok) {
         setdataserach(data.data);
         toast.success(data.message, tt);
+        setlaodingPatent(false);
       } else {
         toast.success(data.message, tt);
       }

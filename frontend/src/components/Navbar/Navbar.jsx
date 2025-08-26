@@ -3,16 +3,19 @@ import "../../css/navbar.css";
 import { assets } from "../../../public/frontend_assets/assets";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { useStore } from "../../store/StoreContext";
-import { ToastContainer } from "react-toastify";
 import Curtime from "../time/time";
+import LoadingSmall from "../smallloading/LoadingSmall";
 const Navbar = ({ setshowlogin }) => {
-  const { menu, setmenu, LoggdIn, Logout, admin } = useStore();
+  const { menu, setmenu, LoggdIn, Logout, adminLoading, admin } = useStore();
   const [show, setshow] = useState(false);
   const navigate = useNavigate();
+  console.log(admin);
   return (
     <>
       <div className="navbar">
-        <h1 className="logo"><Curtime/></h1>
+        <h1 className="logo">
+          <Curtime />
+        </h1>
         <ul className="navbar-menu">
           <NavLink
             to={"/"}
@@ -24,9 +27,10 @@ const Navbar = ({ setshowlogin }) => {
             to={"/Service"}
             onClick={() => setmenu("Services")}
             className={menu === "Services" ? "active" : ""}>
-            Services
+            Tests
           </NavLink>
-          {LoggdIn && admin?.isAdmin ? (
+          {/* admin?.isAdmin */}
+          {LoggdIn && admin ? (
             <NavLink
               to={"Billing"}
               onClick={() => setmenu("Billing")}
@@ -36,15 +40,35 @@ const Navbar = ({ setshowlogin }) => {
           ) : (
             ""
           )}
-          <NavLink
-            to={"/Appointment"}
-            onClick={() => setmenu("Appointment")}
-            className={menu === "Appointment" ? "active" : ""}>
-            Appointment
-          </NavLink>
+          {LoggdIn && admin ? (
+            <NavLink
+              to={"doctordata"}
+              onClick={() => setmenu("doctordata")}
+              className={menu === "doctordata" ? "active" : ""}>
+              Doctor
+            </NavLink>
+          ) : (
+            <NavLink
+              to={"/Appointment"}
+              onClick={() => setmenu("Appointment")}
+              className={menu === "Appointment" ? "active" : ""}>
+              Appointment
+            </NavLink>
+          )}
+          {!LoggdIn ? (
+            ""
+          ) : !admin && adminLoading ? (
+            <div className="admin-laoding-detail">
+              {" "}
+              <LoadingSmall size={30} />{" "}
+            </div>
+          ) : (
+            ""
+          )}
         </ul>
         <div className="navbar-right">
-          {LoggdIn && admin?.isAdmin ? (
+          {/* LoggdIn */}
+          {LoggdIn && admin ? (
             <img
               onClick={() => {
                 navigate("/userdata"), setmenu("img");
@@ -70,7 +94,7 @@ const Navbar = ({ setshowlogin }) => {
             <button
               onClick={() => {
                 setshowlogin(true);
-                navigate("/signup");
+                navigate("/login");
                 setmenu("");
               }}>
               sign in

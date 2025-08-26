@@ -3,8 +3,8 @@ import "../../css/billpdf.css";
 import { useStore } from "../../store/StoreContext";
 import { ToastContainer,toast } from "react-toastify";
 function Billpdf() {
-  const { data, userId,tt } = useStore();
-
+  const { data, userId, tt, setdata } = useStore();
+// data;
   const aa = !!userId;
 
   return (
@@ -79,6 +79,20 @@ function Billpdf() {
             className="billpdf-button"
             onClick={() => {
               window.print();
+              setdata({
+                name: "",
+                age: "",
+                referedBy: "",
+                date: "",
+                gender: "",
+                test: "",
+                cashAmount: "",
+                gPayAmount: "",
+                discount: "",
+                paidAmount: "",
+                mobile: "",
+                totalAmount: "",
+              });
             }}>
             download
           </button>

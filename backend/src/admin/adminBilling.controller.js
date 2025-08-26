@@ -2,9 +2,9 @@ import { adminBillin } from "./billing.model.js";
 
 export const adminBilling = async (req, res) => {
     try {
-        const { name, referedBy,date, gender, age, cashAmount, gPayAmount,test, discount, paidAmount, mobile, totalAmount } = req.body;
+        const { name, referedBy, date, gender, age, cashAmount, gPayAmount, test, discount, paidAmount, mobile, totalAmount } = req.body;
 
-        if (!name || !referedBy || !test||!date|| !gender || !age || !cashAmount || !discount || !paidAmount || !mobile ) {
+        if (!name || !referedBy || !test || !date || !gender || !age || !cashAmount  || !paidAmount || !mobile) {
             return res.status(400).json({ message: "Fill All Coulumn " })
         }
 
@@ -14,7 +14,7 @@ export const adminBilling = async (req, res) => {
                 success: false
             })
         }
-        
+
         await adminBillin.create({
             name,
             referedBy,
@@ -40,7 +40,7 @@ export const adminBilling = async (req, res) => {
         return res.status(500).send({ message: "server side error", success: false })
     }
 
-} 
+}
 
 
 //? get data help of date
@@ -55,8 +55,8 @@ export const adminDataDate = async (req, res) => {
                 success: false
             });
         }
-        
-        const datedata = await adminBillin.find({date:date})
+
+        const datedata = await adminBillin.find({ date: date })
         return res.json({
             message: "successfull data fatched",
             success: true,
@@ -65,14 +65,14 @@ export const adminDataDate = async (req, res) => {
     } catch (err) {
         return res.json({
             message: "Server Error Data Not Fatch ",
-            success:false
+            success: false
         })
     }
 }
 
 //? admin or not
 
-export const getAdmin = async(req,res) => {
+export const getAdmin = async (req, res) => {
     try {
         const { isAdmin } = req.user;
         if (!isAdmin) {
@@ -81,10 +81,45 @@ export const getAdmin = async(req,res) => {
         return res.json({
             message: "Admin data",
             success: true,
-            isAdmin:isAdmin
+            isAdmin: isAdmin
         })
     }
     catch (err) {
-        return res.json({message:"admin  Server error"})
+        return res.json({ message: "admin  Server error" })
+    }
+}
+
+//? is doctor get;
+
+export const Doctorset = async (req, res) => {
+    try {
+
+        const data = await adminBillin.find();
+        if (!data) {
+            return res.status(400).json({ message: "Data Not found ", success: false });
+        }
+
+        return res.status(200).json({ message: "Data Successfull fatched ", success: true, data: data });
+
+    } catch (err) {
+        return res.status(500).json({ message: "Server error doctor name not fatched ", success: false });
+    }
+}
+
+//todo doctor data
+
+export const details = async (req, res) => {
+    const userId = req.params.userId.trim();
+    try {
+        const findDetails = await adminBillin.find({ referedBy:userId });
+        if (!findDetails) {
+            return res.status(400).json({message:"Doctor data Not Found .",success:false})
+        }
+        let totalPaid = findDetails.reduce((acc, curr) => {
+            return acc + (curr.paidAmount || 0);
+        }, 0);
+        return res.status(200).json({ message: "Successfully data fatched ", success: true, totalPaid, findDetails});
+    } catch (err) {
+        return res.status(500).json({message:"Server doctor fatching error ",err:err.message,success:false})
     }
 }

@@ -15,6 +15,7 @@ import Tests from "./components/tests/Tests";
 import Billpdf from "./components/billpdf/Billpdf";
 import Login from "./components/loginpop/Login";
 import AdminRoute from "./components/admin/Admin";
+import DoctorSearch from "./components/doctorSearcch/doctorSearch";
 
 const App = () => {
   const [showlogin, setshowlogin] = useState(false);
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/userdata" element={<Content />} />
             <Route path="/Billing" element={<Billing />} />
             <Route path="/billpdf" element={<Billpdf />} />
+            <Route path="/doctordata" element={<DoctorSearch />} />
           </Route>
           <Route path="Service" element={<Service />}>
             <Route path="shivam" element={<Tests items={deases} />} />

@@ -7,7 +7,7 @@
 body {
   min-height: 100%;
 }
-html{
+html {
   min-height: 100%;
 }
 a {
@@ -35,3 +35,25 @@ a {
   }
 }
 
+.shivasssloading {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+}
+.lading-docotr {
+  position: absolute;
+  top: 38%;
+  left: 75%;
+}
+.user-loading-data {
+  position: absolute;
+  top: 45%;
+  left: 75%;
+}
+
+.form-billing-laoding {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  
+}

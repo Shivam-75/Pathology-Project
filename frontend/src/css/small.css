@@ -1,0 +1,26 @@
+
+.load-ct {
+  border: none;
+  border-top: 5px  solid rgba(0, 0, 0, 1);
+  background: none;
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+
+  animation: ani 0.8s linear infinite;
+}
+
+@keyframes ani {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 750px) {
+  .smallloading {
+    right: 15px;
+    top: 239px;
+    width: 90vmin;
+  }
+}

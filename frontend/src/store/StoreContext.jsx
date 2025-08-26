@@ -1,10 +1,76 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 export const StoreContext = createContext(null);
 export const StoreContextProvider = ({ children }) => {
   const [menu, setmenu] = useState("home");
   const navigate = useNavigate();
   const bloodTest = [
+    "Homeoglobin",
+    "Ultrasound",
+    "CBC ",
+    "BI.sugar F-PPR",
+    "RBC Count",
+    "LFT",
+    "KFT",
+    "SGOT",
+    "BUN",
+    "Alk. Phosphatase",
+    "Creatinie",
+    "SGPT",
+    "H.I.V.I. & II",
+    "Thyroid",
+    "LH",
+    "FSH",
+    "Elisa for TB",
+    "Elisa for pregnancy",
+    "Urine",
+    "Semen Examination",
+    "Uric Acid",
+    "LFT",
+    "RBC Couni",
+    "Blood group",
+    "S Hipse",
+    "Montoux",
+    "PCV",
+    "BT",
+    "CT",
+    "PT",
+    "PTT",
+    "Platelate count",
+    "Albumin",
+    "Globullan",
+    "A/G Ratio",
+    "Sodium",
+    "Potassium",
+    "Cloride",
+    "Calcium",
+    "S.A. Mylese",
+    "CPK",
+    "CPK-MB",
+    "Widal",
+    "GBP",
+    "R.A. Factor",
+    "X-RAY Chest",
+    "X-RAY shoulder",
+    "X-RAY (L.S)",
+    "USG (Abdomin)",
+    "USU (Fetus)",
+    "USU (Small Parts)",
+    "Hepatihs B",
+    "Hepatihs C",
+    "TFT",
+    "TSH",
+    "X-RAY MUG",
+    "X-RAY (Barium)",
+    "X-RAY (fishologram)",
+    "X-RAY IVP",
+    "X-RAY HSG",
+    "Uria",
+    "MP",
+    "HBS Ag",
+    "HBAIC",
+    "CRP",
+    "ESR",
     "T3 T4 TSH",
     "TSH",
     "FT3 FT4 TSH",
@@ -15,114 +81,111 @@ export const StoreContextProvider = ({ children }) => {
     "E2",
     "TORCH 5 PANEL",
     "TORCH 10 PANEL",
-    "TB PLATINUM (TB GOLD)",
+    "TB PLATINUM(TB GOLD)",
     "CA 125",
     "CA 19.9",
-    "C1 15.3",
-    "TRIPLE MARKER",
+    "C1 15.5",
+    "TRIPLE MARKERS",
     "AMH",
-    "HBA1C",
+    "HBAIC",
     "INSULIN",
     "PSA TOTAL",
     "PSA FREE",
     "HLAB 27",
-    "VITAMIND (TOTAL)",
-    "VITAMIN B 12",
-    "ANTICCP",
-    "CBC+CRP",
+    "VITAMIN D",
+    "VITAMIN B12",
+    "ANTICPP",
+    "CBC+GBP",
     "PUS RM",
-    "RA & ASO CRP EACH",
-    "LUPUS ANTICOGLUANT",
+    "RA ASO CRP EACH",
+    "LUPUS ANTICOGULANT",
     "LIPASE",
-    "AMYLASE",
+    "AMAYLASE",
     "TB PCR",
     "HBV DNA VIRAL LOAD PCR",
-    "HCV RNA PCR",
-    "HBSAG (ELISA)",
-    "HIV (ELISA)",
-    "ANTICARDIOLIPIN (IGG OR IGM OR IgA)",
-    "ANTIPHOSPHOLIPID (IGG OR IGM OR IgA)",
+    "HCV RNAPCR",
+    "HBSAG(ELISA)",
+    "HIV ELISA",
+    "ANTI CARDIOLIPIN ",
+    "ANTI PHOSHOLIPID",
     "ADA",
     "TOTAL IGE LEVEL",
     "PAP SMEAR",
-    "HISTOPATHOLOGY (SMALL / MEDIUM/LARGE)",
-    "CULTURE & SENSITIVITY",
+    "HISTOPATHOLOGY(SMALL/ MIDIUM/LARGE)",
+    "CULTURE & SENSTIVITY",
     "BLOOD CS",
-    "TYPHOID",
+    "TYPHIDOT",
     "FOLIC ACID",
     "CEA",
-    "ALFA FETO PROTEIN (AFP)",
-    "IRON PROFILE (IRON TIBC FERRITIN)",
+    "ALFA FETO PROTEIN",
+    "IRON PROFILE",
     "BONE MARROW",
     "CPK",
     "CPK MB",
-    "BETA HCG (ELISA)",
-    "FREE BETA HCG",
-    "TROPONIN T (ELISA)",
-    "TROPONIN I (ELISA)",
-    "VIT D 3 LEVEL",
-    "SPUTUM GENEXPERT",
-    "ALLERGY PROFILE",
-    "D DIMER",
+    "BETA HCG",
+    "FREE BETA SCG",
+    "TROPNIN T",
+    "TROPNIN I ",
+    "VIT D3 LAVEL",
+    "SPUTUM GENXAPERT",
+    "ALLEGRY PROFILE",
+    "D DIMMER",
     "IL-6",
-    "PROCALCITONIN",
+    "PROCALCITIONIN",
     "ANTI TPO",
-    "HB ELECTROPHOROSIS",
-    "PROTINE ELECTROPHOROSIS",
+    "HB ELECTTOPHOROSIS",
+    "PROTIN ELECTROPHOROSIS",
     "ANTI DS DNA",
     "NT PRO BNP",
     "SERUM AMONIA",
-    "SERUM COPPER",
+    "SEUMN COPPER",
     "URINE COPPER",
     "BICARBONATE",
-    "BRUCELLA IGG IGM",
+    "BRUCELLA IGG 1GM",
     "CEROPLASMIN",
-    "DENGU IGG/IGM/NS1",
+    "DENGU IGG",
     "TTG IGA",
-    "CROMOSOME",
-    "TRIPLE MARKER",
+    "CROMPOSOME",
+    "TRIPLE MARKERS",
     "DUAL MARKER",
     "QUAD PARKER",
-    "ASCITIC,PURAL,CSF RM",
+    "ASCITIC,PURAL,CSF,RM",
     "LDH",
-    "ALLERGY PROFILE",
+    "ALLEGRY PROFILE",
     "DRUG OF ABUSE",
     "FACTOR 8",
-    "FACTOR 9",
+    "FACTOR 9 ",
     "PT INR",
     "APTT",
-    "BETA 2 GLYCOPROTIEN",
+    "BETA 2 GLYCOPROTIN",
     "HIV WESTERN BLOT",
     "CD 3 CD 4 CD 5",
     "HIV VIRAL LOAD",
-    "MTB CULTURE (1 WEEK)",
-    "MTB CULTURE (15 DAYS)",
+    "MTB CULTURE (1 WEAK)",
+    "MTB CULTURE (15 DAY)",
     "MTB CULTURE (1 MONTH)",
-    "ALCOHOL LEVEL",
-    "ALPLA PROFILE",
+    "ALCOHAL LEVEL",
+    "APLA PROFILE",
     "D2 HORMONE PROFILE",
-    "H.S. 1.1",
-    "H.S. 1.2",
-    "H.S. 1.3",
-    "H.S. 1.7",
-    "ARTERITITES PROFILE (MIN)",
-    "ARTERITITES PROFILE (MAX)",
-    "H.S. 1.1 LFT,KFT,LIPID,FT3,CBC,IRON PROFILE,URINE,RNI HBA1C",
-    "H.S. 1.3 = VIT D3, VITB12",
+    "H.S 1.1",
+    "H.S 1.2",
+    "H.S 1.3",
+    "H.S 1.7",
+    "ARTHERITIES PROFILE(MINI)",
+    "ARTHERITIES PROFILE(MAXI)",
   ];
- 
 
-  //?toast 
- const tt = {
-   position: "top-right",
-   autoClose: 1000,
-   hideProgressBar: false,
-   closeOnClick: false,
-   pauseOnHover: true,
-   draggable: true,
-   progress: undefined,
-   theme: "dark",
- };
+  //?toast
+  const tt = {
+    position: "top-right",
+    autoClose: 1000,
+    hideProgressBar: false,
+    closeOnClick: false,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+  };
 
   const [deases, setdesease] = useState([]);
 
@@ -165,8 +228,7 @@ export const StoreContextProvider = ({ children }) => {
       const data = await res.json();
       if (res.ok) {
         setadvance(data.data);
-      }
-      else {
+      } else {
         return;
       }
     } catch (err) {
@@ -174,10 +236,14 @@ export const StoreContextProvider = ({ children }) => {
     }
   };
 
+  //?patient data loading manage state
+  const [loadingDetailsPatent, setlaodingPatent] = useState(false);
   const AuthorizedOrdnot = `Bearer ${tokenData}` || null;
   const [admin, setadmin] = useState();
 
+  const [adminLoading, setadminLoadig] = useState(false);
   const AdminorNot = async () => {
+    setadminLoadig(true);
     try {
       const res = await fetch("http://localhost:9000/api/admin/admin", {
         method: "GET",
@@ -188,7 +254,9 @@ export const StoreContextProvider = ({ children }) => {
       const data = await res.json();
       if (res.ok) {
         setadmin(data);
-        console.log(data);
+        setadminLoadig(false);
+
+        console.log("ssss", data);
       } else {
         setadmin(false);
       }
@@ -202,6 +270,9 @@ export const StoreContextProvider = ({ children }) => {
     normaalService();
   }, []);
 
+  //docotr dataas
+  const [dtname, setdtname] = useState([]);
+
   //? id store hoga yadi user name pe click krega to patient id
 
   const [userId, setUserId] = useState("");
@@ -209,29 +280,33 @@ export const StoreContextProvider = ({ children }) => {
   useEffect(() => {
     AdminorNot();
   }, [tokenData]);
-  
-  const [data, setdata] = useState({
-    name: "",
-    age: "",
-    referedBy: "",
-    date: "",
-    gender: "",
-    test: "",
-    cashAmount: "",
-    gPayAmount: "",
-    discount: "",
-    paidAmount: "",
-    mobile: "",
-    totalAmount: "",
-  });
 
-
-
-  
+  const [data, setdata] = useState();
+  useEffect(() => {
+    const docotrsdata = async () => {
+      try {
+        const responser = await fetch(
+          "http://localhost:9000/api/admin/admin/doctordata",
+          {
+            method: "GET",
+            headers: {
+              Authorization: AuthorizedOrdnot,
+            },
+          }
+        );
+        const datas = await responser.json();
+        if (responser.ok) {
+          setdtname(datas.data);
+        }
+      } catch (err) {
+        console.log("server error ");
+      }
+    };
+    docotrsdata();
+  }, []);
 
   //? ye date se data jo serch hoga yha save hoga
   const [dateseracg, setdataserach] = useState([]);
-
 
   return (
     <StoreContext.Provider
@@ -245,6 +320,7 @@ export const StoreContextProvider = ({ children }) => {
         data,
         setdata,
         LoggdIn,
+        loadingDetailsPatent,
         Logout,
         admin,
         AuthorizedOrdnot,
@@ -252,6 +328,10 @@ export const StoreContextProvider = ({ children }) => {
         dateseracg,
         setUserId,
         userId,
+        adminLoading,
+        dtname,
+        setdtname,
+        setlaodingPatent,
         tt,
       }}>
       {children}

@@ -56,10 +56,8 @@ export const billingSchema = z.object({
     ),
 
     referedBy: z
-        .enum(["Self", "Doctor"], {
-            required_error: "Refered By is required",
-            invalid_type_error: "Invalid Refered By value",
-        }),
+        .string({ required_error: "Doctor data is important" })
+        .trim(),
 
     mobile: z
         .string({ required_error: "Mobile number is required" })
