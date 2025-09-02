@@ -1,5 +1,5 @@
 import React from "react";
-import Loginpop from "../../components/loginpop/registration.jsx";
+import Loginpop from "../../components/loginpagedt/Login.jsx";
 const Signup = () => {
   return (
     <div className="login">

@@ -1,21 +1,21 @@
 import { Route, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar/Navbar.jsx";
-import Home from "./pages/home/Home.jsx";
+import Navbar from "./components/navbarpagedt/Navbar.jsx";
+import Home from "./pages/homepagedtmain/Home.jsx";
 
-import Fotter from "./components/footer/Fotter.jsx";
+import Fotter from "./components/fotterpagedt/Fotter.jsx";
 import { useState } from "react";
-import Content from "./pages/search/SearchBar.jsx";
-import Signup from "./pages/Signup/signup.jsx";
-import Appointment from "./pages/Apointment/Appointment.jsx";
-import Service from "./pages/services/Service.jsx";
-import Billing from "./pages/Billing/Billing.jsx";
-import Error from "./components/error/Error.jsx";
+import Content from "./pages/searchpagemain/SearchBar.jsx";
+import Signup from "./pages/searchsignuppage/signup.jsx";
+import Appointment from "./pages/aponontmentpagedt/Appointment.jsx";
+import Service from "./pages/searchpagemaingt/Service.jsx";
+import Billing from "./pages/billingpagedtmain/Billing.jsx";
+import Error from "./components/errorpages/Error.jsx";
 import { useStore } from "./store/StoreContext.jsx";
-import Tests from "./components/tests/Tests.jsx";
-import Billpdf from "./components/billpdf/Billpdf.jsx";
-import Login from "./components/loginpop/Login.jsx";
-import AdminRoute from "./components/admin/Admin.jsx";
-import DoctorSearch from "./components/doctorSearcch/doctorSearch.jsx";
+import Tests from "./components/testpagedt/Tests.jsx";
+import Billpdf from "./components/billingpdfdata/Billpdf.jsx";
+import Login from "./components/loginpagedt/Login.jsx";
+import AdminRoute from "./components/adminpanel/Admin.jsx";
+import DoctorSearch from "./components/docotrsearchdt/doctorSearch.jsx";
 
 const App = () => {
   const [showlogin, setshowlogin] = useState(false);

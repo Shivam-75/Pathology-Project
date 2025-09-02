@@ -1,5 +1,5 @@
 import React from "react";
-import Serach from "../../components/search/Serach.jsx";
+import Serach from "../../components/searchpagedt/Serach.jsx";
 import Usertable from "../../components/table/Usertable.jsx";
 
 const Content = () => {

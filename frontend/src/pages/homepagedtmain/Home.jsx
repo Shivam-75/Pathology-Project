@@ -1,7 +1,7 @@
-import Header from "../../components/header/Header.jsx";
-import Viraldeases from "../../components/viraldease/Viraldeases.jsx";
+import Header from "../../components/headerpagedt/Header.jsx";
+import Viraldeases from "../../components/viraldeasespage/Viraldeases.jsx";
 import Machineimg from "../../components/machine_img/Machineimg.jsx";
-import { pathologyMachineimgs } from "../../../public/frontend_assets/assets.jsx";
+import { pathologyMachineimgs } from "../../../public/frontend_assets/assets.js";
 const Home = () => {
   return (
     <div className="Home">

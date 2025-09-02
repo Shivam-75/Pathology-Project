@@ -1,5 +1,5 @@
 import React from "react";
-import Apform from "../../components/apform/Apform.jsx";
+import Apform from "../../components/apformbooking/Apform.jsx";
 
 const Appointment = () => {
   return (

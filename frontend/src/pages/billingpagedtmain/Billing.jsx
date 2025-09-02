@@ -1,5 +1,5 @@
 import React from "react";
-import FormBilling from "../../components/Billingform/FormBilling";
+import FormBilling from "../../components/billingformdt/FormBilling.jsx";
 
 const Billing = () => {
   return (

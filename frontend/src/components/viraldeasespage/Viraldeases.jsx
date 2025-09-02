@@ -2,7 +2,6 @@ import React from "react";
 import "../../css/db.css";
 
 import { assets } from "../../../public/frontend_assets/assets.js";
-import Tests from "../tests/Tests";
 const Viraldeases = () => {
   return (
     <div className="viral-deasese">

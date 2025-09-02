@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../../css/navbar.css";
 import { assets } from "../../../public/frontend_assets/assets.js";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { useStore } from "../../store/StoreContext";
-import Curtime from "../time/time";
+import { useStore } from "../../store/StoreContext.jsx";
+import Curtime from "../timepagedt/time.jsx";
 import LoadingSmall from "../smallloading/LoadingSmall.jsx";
 const Navbar = ({ setshowlogin }) => {
   const { menu, setmenu, LoggdIn, Logout, adminLoading, admin } = useStore();

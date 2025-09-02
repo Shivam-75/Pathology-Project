@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Tests from "../../components/tests/Tests";
 import "../../css/service.css";
 import { Outlet, useNavigate } from "react-router-dom";
 const Service = () => {
