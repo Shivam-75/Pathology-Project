@@ -211,7 +211,7 @@ export const StoreContextProvider = ({ children }) => {
 
   const normaalService = async () => {
     try {
-      const res = await fetch("http://localhost:9000/api/user/normaltest");
+      const res = await fetch("http://localhost:9000/api/user/normaltest/");
 
       const data = await res.json();
       if (res.ok) {
@@ -223,7 +223,7 @@ export const StoreContextProvider = ({ children }) => {
   };
   const advanceService = async () => {
     try {
-      const res = await fetch("http://localhost:9000/api/user/advanced");
+      const res = await fetch("http://localhost:9000/api/user/advanced/");
 
       const data = await res.json();
       if (res.ok) {
