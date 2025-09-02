@@ -223,7 +223,9 @@ export const StoreContextProvider = ({ children }) => {
   };
   const advanceService = async () => {
     try {
-      const res = await fetch("http://localhost:9000/api/user/advanced/");
+      const res = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/user/advanced/`
+      );
 
       const data = await res.json();
       if (res.ok) {
@@ -245,7 +247,7 @@ export const StoreContextProvider = ({ children }) => {
   const AdminorNot = async () => {
     setadminLoadig(true);
     try {
-      const res = await fetch("http://localhost:9000/api/admin/admin", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/admin/admin`, {
         method: "GET",
         headers: {
           Authorization: AuthorizedOrdnot,
@@ -286,7 +288,7 @@ export const StoreContextProvider = ({ children }) => {
     const docotrsdata = async () => {
       try {
         const responser = await fetch(
-          "http://localhost:9000/api/admin/admin/doctordata",
+          `${import.meta.env.VITE_API_URL}/api/admin/admin/doctordata`,
           {
             method: "GET",
             headers: {
