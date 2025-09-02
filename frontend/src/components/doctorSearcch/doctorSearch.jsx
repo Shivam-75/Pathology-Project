@@ -76,16 +76,20 @@ const DoctorSearch = () => {
             <button type="submit" className="doctor-data-btn">
               Submit
             </button>
-            <h1
+            <h2
+              onClick={() => {
+                window.print();
+              }}
               className="doctor-data-btn amount-dt">
-              Amount: {doctorAmount}
-            </h1>
+              Download
+            </h2>
           </div>
         </form>
         {/* docotres data and show */}
 
         <div className="user-table">
           <h1 className="">Doctor Details</h1>
+          <h1 >Total Amount: {doctorAmount}</h1>
 
           <table className="user-tables-data">
             <thead>
@@ -93,7 +97,7 @@ const DoctorSearch = () => {
                 <th className="crth">Name</th>
                 <th className="crth">Date</th>
                 <th className="crth">Refered by</th>
-                <th className="crth">Total Amount</th>
+                <th className="crth"> Amount</th>
               </tr>
             </thead>
             <tbody>

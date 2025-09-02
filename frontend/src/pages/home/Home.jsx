@@ -1,5 +1,5 @@
 import Header from "../../components/header/Header";
-import Viraldeases from "../../components/viralDease/Viraldeases";
+import Viraldeases from "../../components/viraldease/Viraldeases";
 import Machineimg from "../../components/machine_img/Machineimg";
 import { pathologyMachineimgs } from "../../../public/frontend_assets/assets";
 const Home = () => {

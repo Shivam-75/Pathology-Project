@@ -72,3 +72,33 @@
       top: 41%;
     }
 }
+
+@media print {
+  .navbar {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .billpdf-button {
+    display: none;
+  }
+  .doctoreinputs{
+    display: none;
+  }
+  .user-table{
+    position: absolute;
+    top:-90px;
+    width: 100vmin;
+
+  }
+  .user-table{
+    color: blue;
+  }
+  .usertable-item-tr{
+    color: red;
+    
+  }
+
+
+}
