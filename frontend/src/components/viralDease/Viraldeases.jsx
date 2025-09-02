@@ -1,5 +1,5 @@
 import React from "react";
-import "../../css/ViralDeases.css";
+import "../../css/db.css";
 
 import { assets } from "../../../public/frontend_assets/assets";
 import Tests from "../tests/Tests";
