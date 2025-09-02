@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-    origin: "*",
+    origin: "https://pathology-project-git-main-ss-projects-38a3890a.vercel.app",
     methods: "GET, POST ,PUT ",
     credentials:true
 }))
