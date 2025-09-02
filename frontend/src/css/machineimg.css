@@ -7,7 +7,6 @@
   margin-left: 20px;
 }
 .machine {
-  height: 35vmin;
   width: 45vmin;
   margin: 10px;
   border-radius: 10px;
@@ -20,16 +19,14 @@
   height: 25vmin;
 }
 .machine-img-content {
-  padding: 10px;
+  padding: 0 10px;
   text-transform: capitalize;
   overflow: hidden;
 }
-.machine-img-content h1 {
-  font-size: 2.5vmin;
+.machine-img-content h2 {
   color: blue;
 }
 .machine-img-content p {
-  font-size: 2vmin;
   padding: 5px 0px;
 }
 .pathology-machines {
@@ -39,36 +36,31 @@
   text-transform: capitalize;
 }
 .pathology-machine-contents {
-  width: 50%;
+  width: 80%;
   margin: auto;
   font-size: 2.4vmin;
   padding-bottom: 120px;
-  font-family: cursive;
 }
-
 
 @media (max-width: 750px) {
   .pathology-machine-contents {
     padding-bottom: 20px;
     width: 80%;
-    text-align: center;
-    /* width: 90vmin; */
   }
   .pathology-machines {
     margin: 8px;
   }
   .machine {
-    width: 85vmin;
-    height: 50vmin;
-    padding: 0px;
-    margin: 0px;
+    width: 100%;
   }
   .machine-img img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
     height: 35vmin;
-    padding: 0px;
-    margin: 0;
   }
-    .machine-flex-outer-box {
+
+  .machine-flex-outer-box {
     justify-content: center;
+    margin-left: 0px;
   }
 }

@@ -18,18 +18,11 @@ const Viraldeases = () => {
             through direct contact, airborne particles, contaminated food or
             water, or insect bites.
           </p>
-          <div className="prevention">
-            <h2>How to Prevent Viral Diseases</h2>
-            <li> Maintain Good Hygiene</li>
-            <li> Get Vaccinated</li>
-            <li>Avoid Close Contact with Sick People</li>
-            <li> Boost Your Immune System</li>
-          </div>
         </div>
       </div>
       <div className="virals-dease-bottom-imgs">
         <div className="vrl-content-p">
-          <h1>Trusted Diagnostics. Accurate Results. Always.</h1>
+          <h2>Trusted Diagnostics. Accurate Results. Always.</h2>
           <p>
             Welcome to{" "}
             <strong>
@@ -45,10 +38,7 @@ const Viraldeases = () => {
             collection services ensure a hassle-free experience for you and your
             loved ones.
           </p>
-          <p>
-            Experience the best of the best in pathology services — because your
-            health deserves nothing less.
-          </p>
+         
         </div>
         <img src={assets.viraldease1} alt="" />
 

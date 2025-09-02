@@ -14,7 +14,7 @@ const Machineimg = ({ pathologyMachineimgs }) => {
                 <img src={item.imgs} alt="" />
               </div>
               <div className="machine-img-content">
-                <h1>{item.tittle}</h1>
+                <h2>{item.tittle}</h2>
                 <p>{item.description}</p>
               </div>
             </div>
