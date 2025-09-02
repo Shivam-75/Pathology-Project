@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/search.css";
-import { useStore } from "../../store/StoreContext";
+import { useStore } from "../../store/StoreContext.jsx";
 import { useState } from "react";
 import { toast ,ToastContainer } from "react-toastify";
 const Serach = () => {

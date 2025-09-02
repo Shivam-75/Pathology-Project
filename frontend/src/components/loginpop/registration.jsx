@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "../../css/loginpop.css";
-import { assets } from "../../../public/frontend_assets/assets";
+import { assets } from "../../../public/frontend_assets/assets.js";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import { useStore } from "../../store/StoreContext";
-import LoadingSmall from "../smallloading/LoadingSmall";
+import { useStore } from "../../store/StoreContext.jsx";
+import LoadingSmall from "../smallloading/LoadingSmall.jsx";
 const Loginpop = () => {
   const navigate = useNavigate();
   const [loader, setloader] = useState(false);

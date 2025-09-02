@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../css/doctordt.css";
-import { useStore } from "../../store/StoreContext";
-import LoadingSmall from "../smallloading/LoadingSmall";
+import { useStore } from "../../store/StoreContext.jsx";
+import LoadingSmall from "../smallloading/LoadingSmall.jsx";
 import { ToastContainer, toast } from "react-toastify";
 
 const DoctorSearch = () => {

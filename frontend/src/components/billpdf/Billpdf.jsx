@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/billpdf.css";
-import { useStore } from "../../store/StoreContext";
+import { useStore } from "../../store/StoreContext.jsx";
 import { ToastContainer,toast } from "react-toastify";
 function Billpdf() {
   const { data, userId, tt, setdata } = useStore();

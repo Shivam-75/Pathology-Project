@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import "../../css/usertable.css";
 import {useNavigate} from "react-router-dom"
-import { useStore } from "../../store/StoreContext";
-import LoadingSmall from "../smallloading/LoadingSmall";
+import { useStore } from "../../store/StoreContext.jsx";
+import LoadingSmall from "../smallloading/LoadingSmall.jsx";
 const Usertable = () => {
   const { dateseracg, setUserId, loadingDetailsPatent } =
     useStore();

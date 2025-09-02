@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "../../css/apform.css";
-import { useStore } from "../../store/StoreContext";
+import { useStore } from "../../store/StoreContext.jsx";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 

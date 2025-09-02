@@ -1,8 +1,8 @@
 import React from "react";
 import "../../css/tests.css";
 import { NavLink } from "react-router-dom";
-import { useStore } from "../../store/StoreContext";
-import Loader from "../loader/Loader";
+import { useStore } from "../../store/StoreContext.jsx";
+import Loader from "../loader/Loader.jsx";
 
 const Tests = ({ items }) => {
   const { setmenu } = useStore();

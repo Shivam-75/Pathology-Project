@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "../../css/formBilling.css";
-import { useStore } from "../../store/StoreContext";
+import { useStore } from "../../store/StoreContext.jsx";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
-import LoadingSmall from "../smallloading/LoadingSmall";
+import LoadingSmall from "../smallloading/LoadingSmall.jsx";
 
 const FormBilling = () => {
   const { tt, dtname, setdtname, AuthorizedOrdnot, bloodTest } = useStore();

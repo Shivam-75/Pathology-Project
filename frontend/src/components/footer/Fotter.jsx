@@ -1,6 +1,6 @@
 import React from "react";
 import "../../css/footer.css";
-import { assets } from "../../../public/frontend_assets/assets";
+import { assets } from "../../../public/frontend_assets/assets.js";
 const Fotter = () => {
   return (
     <div className="footer">

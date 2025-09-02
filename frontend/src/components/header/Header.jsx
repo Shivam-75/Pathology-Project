@@ -1,7 +1,7 @@
 import "../../css/header.css";
-import { assets } from "../../../public/frontend_assets/assets";
+import { assets } from "../../../public/frontend_assets/assets.js";
 import { useNavigate } from "react-router-dom";
-import { useStore } from "../../store/StoreContext";
+import { useStore } from "../../store/StoreContext.jsx";
 const Header = () => {
   const { LoggdIn, Logout } = useStore();
   const navigate = useNavigate();

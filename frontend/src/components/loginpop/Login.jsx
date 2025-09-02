@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "../../css/loginpop.css";
-import { assets } from "../../../public/frontend_assets/assets";
+import { assets } from "../../../public/frontend_assets/assets.js";
 import { useNavigate } from "react-router-dom";
-import { useStore } from "../../store/StoreContext";
+import { useStore } from "../../store/StoreContext.jsx";
 import { ToastContainer, toast } from "react-toastify";
-import LoadingSmall from "../smallloading/LoadingSmall";
+import LoadingSmall from "../smallloading/LoadingSmall.jsx";
 const Login = () => {
   const { tt } = useStore();
   const [loader, setloader] = useState(false);

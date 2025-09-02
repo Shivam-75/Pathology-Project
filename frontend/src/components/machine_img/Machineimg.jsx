@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../css/machineimg.css";
 
-import { useStore } from "../../store/StoreContext";
+import { useStore } from "../../store/StoreContext.jsx";
 const Machineimg = ({ pathologyMachineimgs }) => {
   return (
     <>
