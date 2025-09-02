@@ -1,5 +1,6 @@
 import React from "react";
-import "../../css/Viraldeases.css";
+import "../../css/ViralDeases.css";
+
 import { assets } from "../../../public/frontend_assets/assets";
 import Tests from "../tests/Tests";
 const Viraldeases = () => {
