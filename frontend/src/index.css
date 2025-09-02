@@ -57,3 +57,11 @@ a {
   left: 45%;
   
 }
+.header-front {
+  /* background-image: url("/image copy.png"); */
+  height: 35vw;
+  border: 1px solid black;
+  background-position: center;
+  background-size: contain;
+  padding: 40px;
+}

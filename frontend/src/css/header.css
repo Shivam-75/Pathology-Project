@@ -47,8 +47,9 @@
   margin-top: 10px;
 }
 .header-front {
+  border: 1px solid beige;
   background-image: url("/image copy.png");
-  height: 35vw;
+  height: 38vw;
   background-position: center;
   background-size: contain;
   padding: 40px;
