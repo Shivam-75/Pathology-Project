@@ -64,7 +64,7 @@ const FormBilling = () => {
     setdata(submitdataform);
 
     try {
-      const res = await fetch("http://localhost:9000/api/admin/billinform", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/admin/billinform`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

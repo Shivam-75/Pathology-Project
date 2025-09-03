@@ -9,7 +9,6 @@ const Navbar = ({ setshowlogin }) => {
   const { menu, setmenu, LoggdIn, Logout, adminLoading, admin } = useStore();
   const [show, setshow] = useState(false);
   const navigate = useNavigate();
-  console.log(admin);
   return (
     <>
       <div className="navbar">

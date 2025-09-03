@@ -29,7 +29,7 @@ const Loginpop = () => {
 
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:9000/api/user/register", {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/register`, {
         method: "POST",
         headers: {
           "Content-Type": "Application/json",

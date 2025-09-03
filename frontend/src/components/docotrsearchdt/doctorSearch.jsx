@@ -24,7 +24,7 @@ const DoctorSearch = () => {
     try {
       setloader(true);
       const response = await fetch(
-        `http://localhost:9000/api/admin/admin/doctordata/dts/${doctoresdt}`,
+        `${import.meta.env.VITE_API_URL}/api/admin/admin/doctordata/dts/${doctoresdt}`,
         {
           headers: {
             "Content-Type": "application/json",

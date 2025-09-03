@@ -258,7 +258,6 @@ export const StoreContextProvider = ({ children }) => {
         setadmin(data);
         setadminLoadig(false);
 
-        console.log("ssss", data);
       } else {
         setadmin(false);
       }
