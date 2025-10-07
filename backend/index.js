@@ -18,7 +18,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
     "http://localhost:5173",
-    "https://pathology-project.vercel.app/"
+    "https://pathology-project.vercel.app"
 ];
 app.use(cors({
     origin: allowedOrigins,
