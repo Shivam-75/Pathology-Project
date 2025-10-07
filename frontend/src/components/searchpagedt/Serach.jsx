@@ -49,12 +49,14 @@ const Serach = () => {
   return (
     <div className="Search">
       <form method="post" onSubmit={clickhandel} className="search-inputs">
+        <label for="date">Select a date</label>
         <input
           name="date"
           onChange={changlehandle}
           value={datess}
           type="date"
           required
+          id="date"
         />
         <button type="submit">Search</button>
       </form>
