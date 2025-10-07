@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../../css/loginpop.css";
 import { assets } from "../../../public/frontend_assets/assets.js";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import { useStore } from "../../store/StoreContext.jsx";
 import LoadingSmall from "../smallloading/LoadingSmall.jsx";
@@ -29,13 +29,16 @@ const Loginpop = () => {
 
     e.preventDefault();
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/user/register`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "Application/json",
-        },
-        body: JSON.stringify(register),
-      });
+      const res = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/user/register`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "Application/json",
+          },
+          body: JSON.stringify(register),
+        }
+      );
       const data = await res.json();
       if (res.ok) {
         toast.success(data.message, tt);
