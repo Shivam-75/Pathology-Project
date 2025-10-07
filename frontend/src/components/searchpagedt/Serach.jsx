@@ -2,9 +2,9 @@ import React from "react";
 import "../../css/search.css";
 import { useStore } from "../../store/StoreContext.jsx";
 import { useState } from "react";
-import { toast ,ToastContainer } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 const Serach = () => {
-  const { AuthorizedOrdnot, setlaodingPatent,setdataserach, tt } = useStore();
+  const { AuthorizedOrdnot, setlaodingPatent, setdataserach, tt } = useStore();
   const [datess, setdatess] = useState("");
 
   const clickhandel = (e) => {
@@ -20,11 +20,13 @@ const Serach = () => {
     setlaodingPatent(true);
     try {
       const res = await fetch(
-        `http://localhost:9000/api/admin/adminbillingdata?date=${datess}`,
+        `${
+          import.meta.env.VITE_API_URL
+        }/api/admin/adminbillingdata?date=${datess}`,
         {
           method: "GET",
           headers: {
-            "Content-Type":"Application/json",
+            "Content-Type": "Application/json",
             Authorization: AuthorizedOrdnot,
           },
         }
@@ -39,7 +41,6 @@ const Serach = () => {
       }
     } catch (err) {
       toast.success("Server Error", tt);
-
     }
   };
 
@@ -49,7 +50,7 @@ const Serach = () => {
         <input name="date" onChange={changlehandle} type="date" required />
         <button type="submit">Search</button>
       </form>
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
 };
