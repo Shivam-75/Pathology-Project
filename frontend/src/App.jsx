@@ -16,6 +16,7 @@ import Billpdf from "./components/billingpdfdata/Billpdf.jsx";
 import Login from "./components/loginpagedt/Login.jsx";
 import AdminRoute from "./components/adminpanel/Admin.jsx";
 import DoctorSearch from "./components/docotrsearchdt/doctorSearch.jsx";
+import Loginpop from "./components/loginpagedt/registration.jsx";
 
 const App = () => {
   const [showlogin, setshowlogin] = useState(false);
@@ -38,7 +39,7 @@ const App = () => {
           </Route>
           <Route path="/Appointment" element={<Appointment />} />
           <Route path="*" element={<Error />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/signup" element={<Loginpop />} />
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
         </Routes>
