@@ -6,7 +6,7 @@ const AdminRoute = () => {
   const { admin } = useStore();
 
   if (admin?.isAdmin !== true) {
-    return <Navigate to="/" />;
+    return <Navigate to="/" /> || <Navigate to="/signup" />;
   }
 
   return <Outlet />;
