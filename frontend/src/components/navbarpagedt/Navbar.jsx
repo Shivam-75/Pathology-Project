@@ -30,22 +30,20 @@ const Navbar = ({ setshowlogin }) => {
           </NavLink>
           {/* admin?.isAdmin */}
           {LoggdIn && admin ? (
-            <NavLink
-              to={"Billing"}
-              onClick={() => setmenu("Billing")}
-              className={menu === "Billing" ? "active" : ""}>
-              Billing
-            </NavLink>
-          ) : (
-            ""
-          )}
-          {LoggdIn && admin ? (
-            <NavLink
-              to={"doctordata"}
-              onClick={() => setmenu("doctordata")}
-              className={menu === "doctordata" ? "active" : ""}>
-              Doctor
-            </NavLink>
+            <>
+              <NavLink
+                to={"Billing"}
+                onClick={() => setmenu("Billing")}
+                className={menu === "Billing" ? "active" : ""}>
+                Billing
+              </NavLink>
+              <NavLink
+                to={"doctordata"}
+                onClick={() => setmenu("doctordata")}
+                className={menu === "doctordata" ? "active" : ""}>
+                Doctor
+              </NavLink>
+            </>
           ) : (
             <NavLink
               to={"/Appointment"}
