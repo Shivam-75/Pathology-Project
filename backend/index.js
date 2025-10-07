@@ -7,7 +7,7 @@ import cors from "cors";
 import { adminroute } from "./src/admin/adminbillin.route.js";
 import cookieParser from "cookie-parser";
 config({
-    path:"./.env"
+    path: "./.env"
 })
 
 
@@ -17,7 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 const allowedOrigins = [
-    "http://localhost:5173", 
+    "http://localhost:5173",
+    "https://pathology-project.vercel.app/"
 ];
 app.use(cors({
     origin: allowedOrigins,
