@@ -55,7 +55,6 @@ const Serach = () => {
           value={datess}
           type="date"
           required
-          id="date"
           placeholder="Date"
         />
         <button type="submit">Search</button>
