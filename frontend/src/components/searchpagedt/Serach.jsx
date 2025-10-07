@@ -35,19 +35,27 @@ const Serach = () => {
       if (res.ok) {
         setdataserach(data.data);
         toast.success(data.message, tt);
-        setlaodingPatent(false);
+        setdatess("");
       } else {
         toast.success(data.message, tt);
       }
     } catch (err) {
       toast.success("Server Error", tt);
+    } finally {
+      setlaodingPatent(false);
     }
   };
 
   return (
     <div className="Search">
       <form method="post" onSubmit={clickhandel} className="search-inputs">
-        <input name="date" onChange={changlehandle} type="date" required />
+        <input
+          name="date"
+          onChange={changlehandle}
+          value={datess}
+          type="date"
+          required
+        />
         <button type="submit">Search</button>
       </form>
       <ToastContainer />
