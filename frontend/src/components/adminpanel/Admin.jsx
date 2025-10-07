@@ -10,9 +10,9 @@ const AdminRoute = () => {
     // return  || <Navigate to="/signup" />;
 
     if (location.pathname === "/") {
-      return <Navigate to="/" />;
+      <Navigate to="/" />;
     } else if (location.pathname === "/signup") {
-      return <Navigate to="/signup" />;
+      <Navigate to="/signup" />;
     }
   }
   return <Outlet />;
