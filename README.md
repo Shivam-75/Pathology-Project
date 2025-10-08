@@ -48,7 +48,14 @@ The project features **JWT authentication**, **admin panel**, and a modern respo
 
 
 ## 🧠 git clone https://github.com/shivam-75/pathology-project.git
-**cd pathology-project
+## 🧠 Demo https://pathology-project-h8k5.vercel.app
+**cd pathology-project**
+
+## Access Admin Panel
+**admin Email : shivam6386000621@gmail.com**
+**admin password : 123456789**
+
+
 
 ## 📂 Project Structure
 
