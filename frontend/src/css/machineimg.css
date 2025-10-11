@@ -10,7 +10,7 @@
   width: 45vmin;
   margin: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 8px 8px 15px black;
   animation: fadeIn 2s;
 }
 .machine-img img {
