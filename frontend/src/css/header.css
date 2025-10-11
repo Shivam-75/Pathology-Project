@@ -1,5 +1,5 @@
 .header {
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
 }
 .header-left {
@@ -61,18 +61,15 @@
 }
 .header-front-content {
   width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
   color: wheat;
 }
 
 @media (max-width: 413px) {
-  .header {
+  /* .header {
     height: 50vh;
-  }
-}
-
-.header-front-content {
-  overflow: hidden;
-  white-space: nowrap;
+  } */
 }
 
 .scroll-text {
@@ -83,13 +80,13 @@
   font-weight: 900;
   color: transparent;
   margin-top: 50px;
- background: linear-gradient(
-  to bottom,
-  #FF671F 50%,
-  #FFFFFF 50%,
-  #FFFFFF 70%, 
-  #046A38 50%  
-);
+  background: linear-gradient(
+    to bottom,
+    #ff671f 50%,
+    #ffffff 50%,
+    #ffffff 70%,
+    #046a38 50%
+  );
   background-clip: text;
   animation: scroll 15s linear infinite;
 }

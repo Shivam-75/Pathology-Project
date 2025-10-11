@@ -25,9 +25,11 @@
 }
 .machine-img-content h2 {
   color: blue;
+  font-size: 20px;
 }
 .machine-img-content p {
   padding: 5px 0px;
+  font-size: 15px;
 }
 .pathology-machines {
   margin: 20px;
