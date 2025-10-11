@@ -14,7 +14,7 @@
   align-items: center;
 }
 .header-content {
-  padding: 20vmin 0px 0px 8vw;
+  /* padding: 20vmin 0px 0px 8vw; */
 }
 .header-content h1 {
   font-size: 5vmin;
@@ -28,7 +28,7 @@
   padding-bottom: 10px;
 }
 .header-img img {
-  height: 35vw;
+  /* height: 35vw; */
   transform: rotateY(200deg);
   margin-left: 50px;
   animation: fadeIn 1.3s;
@@ -49,7 +49,7 @@
 .header-front {
   border: 1px solid beige;
   background-image: url("/image copy.png");
-  height: 38vw;
+  /* height: 38vw; */
   background-position: center;
   background-size: contain;
   padding: 40px;
