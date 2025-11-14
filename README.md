@@ -58,7 +58,7 @@ The project features **JWT authentication**, **admin panel**, and a modern respo
 
 
 ## 📂 Project Structure
-
+```
 shivam-75-pathology-project/
 │
 ├── backend/
@@ -150,5 +150,5 @@ shivam-75-pathology-project/
 │ └── StoreContext.jsx
 │
 └── README.md
-
+```
 
